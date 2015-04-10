@@ -7,15 +7,15 @@ import android.view.MenuItem;
 
 
 public class PackageListScreen extends ActionBarActivity {
-    String[] packageTitles =
-            getApplicationContext().getResources().getStringArray(R.array.package_titles);
+    String[] packageTitles;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.package_list);
 
-
+        packageTitles = getApplicationContext().getResources().
+                getStringArray(R.array.package_titles);
     }
 
     @Override
