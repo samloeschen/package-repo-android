@@ -15,7 +15,7 @@ public class PackageListScreen extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.package_list);
 
-        
+
     }
 
     @Override
