@@ -22,9 +22,16 @@ public class DetailsScreen extends ActionBarActivity {
         if (savedInstanceState == null) //only do this if we haven't already
         {
             Bundle extras = getIntent().getExtras();
-            if(extras != null) //check to see if the main activity sent this one any extras
+            if(extras != null)
             {
-
+                // so, I went ahead and did this with a ton of if statements (I'm someone who is used
+                // to writing game logic). While all the packages in this scenario have corresponding
+                // titles, descriptions, and details, I thought it might be a good exercise to include
+                // code to accomodate the case where they might not have everything. Also, I know I
+                // probably should have put the strings into the resources instead of hard coding them,
+                // but in this case I figured it would be fine for visibility and to save some time.
+                //Let me know if there's anything I can improve here!
+                
                 title = extras.getString("title_key");
                 description = extras.getString("description_key");
                 detail = extras.getString("detail_key");
