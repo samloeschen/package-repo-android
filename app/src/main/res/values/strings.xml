@@ -1,4 +1,5 @@
 <resources>
+
     <string name="app_name">PackageRepo</string>
 
     <string name="hello_world">Hello world!</string>
@@ -887,4 +888,5 @@ Some limitations:
             ant is an available package.
         </item>
     </string-array>
+    <string name="title_activity_details_screen">DetailsScreen</string>
 </resources>
